@@ -6,4 +6,5 @@ leafmap
 nbserverproxy
 owslib
 streamlit
+streamlit-lottie
 
