@@ -1,10 +1,26 @@
+import requests
 import streamlit as st
+from streamlit_lottie import st_lottie
 import leafmap.foliumap as leafmap
 
 
 
 st.set_page_config(layout="wide")
 
+# USE LOTTIE
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+# Use Local CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+local_css("style/style.css")
+
+lottie_coding = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_maxj5quq.json")
 # Customize the sidebar
 markdown = """
 Web App URL: <https://template.streamlitapp.com>
@@ -55,14 +71,18 @@ contact_form = """
     
 </form>
 """  
-st.markdown(contact_form, unsafe_allow_html=True)
 
 
-# Use Local CSS
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-local_css("style/style.css")
+
+with st.container():
+    left_column, right_column = st.columns(2)
+
+with left_column:
+    st.markdown(contact_form, unsafe_allow_html=True)
+
+
+with right_column:
+    st_lottie(lottie_coding, key= None)  
 
    
         
