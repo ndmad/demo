@@ -23,8 +23,8 @@ local_css("style/style.css")
 lottie_coding = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_maxj5quq.json")
 # Customize the sidebar
 markdown = """
-Web App URL: <https://template.streamlitapp.com>
-GitHub Repository: <https://github.com/giswqs/streamlit-multipage-template>
+Wu, Q. (2021). Leafmap: A Python package for interactive mapping and geospatial analysis with minimal coding in a Jupyter environment. Journal of Open Source Software, 6(63), 3414. https://doi.org/10.21105/joss.03414
+
 """
 
 st.sidebar.title("About")
