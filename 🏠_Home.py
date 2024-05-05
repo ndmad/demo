@@ -1,6 +1,5 @@
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 import leafmap.foliumap as leafmap
 
 
@@ -53,13 +52,7 @@ st.markdown(
 
 st.header("Instructions")
 
-markdown = """
-1. For the [GitHub repository](https://github.com/giswqs/streamlit-multipage-template) or [use it as a template](https://github.com/giswqs/streamlit-multipage-template/generate) for your own project.
-2. Customize the sidebar by changing the sidebar text and logo in each Python files.
-3. Find your favorite emoji from https://emojipedia.org.
-4. Add a new app to the `pages/` directory with an emoji in the file name, e.g., `1_🚀_Chart.py`.
 
-"""
 
 st.markdown(markdown)
 
@@ -68,34 +61,5 @@ m.add_basemap("OpenTopoMap")
 m.to_streamlit(height=500)
 
 
-st.header(":mailbox: Get In Touch With Me!")
-
-
-contact_form = """
-<form action="https://formsubmit.co/redgisafrica@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-     <input type="text" name="name" placeholder="Your name" required>
-     <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" rows="10" placeholder="Your Message Here" required></textarea> 
-    <button type="submit">Send</button> 
-    
-</form>
-"""  
-
-
-
-with st.container():
-    left_column, right_column = st.columns(2)
-
-with left_column:
-    st.markdown(contact_form, unsafe_allow_html=True)
-
-
-with right_column:
-    st_lottie(lottie_coding, key= None)  
-
-   
-        
-    
             
 
