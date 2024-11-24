@@ -26,21 +26,16 @@ Wu, Q. (2021). Leafmap: A Python package for interactive mapping and geospatial 
 
 """
 
-st.sidebar.title("About")
-st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
-st.sidebar.image(logo)
 
 # Customize page title
 st.title("Présentation de Données Géospatiales")
 
 st.markdown(
     """
-    Bonjour et bienvenue sur ma page d'accueil ! Je suis géographe et analyste de données géospatiales.
-    J'utilise les technologies les plus récentes pour présenter mes résultats de manière dynamique et interactive.
-    Ma passion pour les données spatiales m'a conduit à développer des solutions innovantes en utilisant des outils tels que Streamlit et Leaflet. 
-    Mon objectif est de rendre mes données accessibles et compréhensibles pour tout le monde, grâce à une interface simple et intuitive.
-    Je suis fier de contribuer à l'avancement de la science des données spatiales et de travailler sur des projets qui ont un impact réel sur notre environnement. 
+    Je suis géographe géomaticien et analyste de données géospatiales 🌍💡, et j'utilise les technologies les plus récentes pour présenter mes résultats de manière dynamique et interactive. Ma passion pour les données spatiales m'a conduit à développer des solutions innovantes en utilisant des outils tels que Streamlit 🚀 et Leaflet 🗺️. Grâce à ces technologies, je suis capable de créer des applications web interactives qui permettent à mes utilisateurs d'explorer mes cartes et mes données en temps réel.
+
+ Mon objectif est de rendre mes données accessibles et compréhensibles pour tout le monde 🌟, grâce à une interface simple et intuitive. J'utilise des graphiques 📊, des cartes 🗺️ et des visualisations pour illustrer mes résultats et faciliter leur interprétation. Je suis fier de contribuer à l'avancement de la science des données spatiales 🔬 et de travailler sur des projets qui ont un impact réel sur notre environnement 🌱. 
+ 
     """
 )
 
